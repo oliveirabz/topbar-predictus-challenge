@@ -1,0 +1,29 @@
+@import 'variables';
+@import './pages/header.scss';
+@import 'pages/menu.scss';
+@import 'pages/module-indicator.scss';
+@import 'pages/user-dropdown.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $off-white;
+  -webkit-font-smoothing: antialiased;
+}
+
+// REM = 1rem = font-size
+// Default font-size: 16px for Desktops
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%; // 15px
+  }
+
+  @media (max-width: 720px) {
+    font-size: 87.5%; // 14px
+  }
+}

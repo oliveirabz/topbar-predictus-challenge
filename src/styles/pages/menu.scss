@@ -1,0 +1,52 @@
+.menu-icon {
+  width: 26px;
+  height: 26px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover .square {
+    animation: expandAnimation 0.3s ease-out forwards;
+  }
+
+  &:hover .grid {
+    gap: 5px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 6px);
+  grid-template-rows: repeat(3, 6px);
+  gap: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.square {
+  width: 6px;
+  height: 6px;
+  border-radius: 1px;
+  transition: background 0.2s ease;
+  background-color: map-get($green-light, '600');
+}
+
+@keyframes expandAnimation {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

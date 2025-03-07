@@ -1,0 +1,15 @@
+.module-indicator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  span {
+    font-weight: bold;
+    color: map-get($green-light, '400');
+  }
+}
+
+.dossie-img {
+  height: 32px;
+  width: 32px;
+}

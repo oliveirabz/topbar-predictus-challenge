@@ -1,0 +1,31 @@
+$black: #0e1612;
+$white: #ffffff;
+$golden: #b49f74;
+$beige: #dcd2bd;
+$off-white: #f4f3ee;
+
+$green-dark: #21332c;
+$green: #2a4c3f;
+$green-light: #45a874;
+
+$green-dark: (
+  '100': $green-dark,
+  '200': #1e2e28,
+);
+
+$green: (
+  '100': $green,
+  '200': #264439,
+);
+
+$green-light: (
+  '100': #ecf6f1,
+  '200': #daeee3,
+  '300': #b5dcc7,
+  '400': #6ab990,
+  '500': #58b182,
+  '600': $green-light,
+  '700': #37865d,
+  '800': #296546,
+  '900': #2a4c3f,
+);

@@ -1,0 +1,22 @@
+.container {
+  background: map-get($green, '100');
+  max-width: 100%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px 20px 40px;
+}
+
+.left-content {
+  display: flex;
+  gap: 32px;
+}
+
+.right-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
