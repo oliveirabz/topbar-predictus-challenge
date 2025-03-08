@@ -1,8 +1,15 @@
 .header-container {
   background: map-get($green, '100');
+
   max-width: 100%;
   margin: 0 auto;
-  padding: 16px 40px 16px 40px;
+  padding: 16px 40px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .header-content {
@@ -38,6 +45,10 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+  .header-container {
+    padding: 12px 20px;
+  }
+
   .header-content {
     padding: 27px 24px;
   }
