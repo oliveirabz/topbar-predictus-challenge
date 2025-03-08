@@ -1,22 +1,56 @@
 .container {
   background: map-get($green, '100');
   max-width: 100%;
+  margin: 0 auto;
+  padding: 16px 40px 16px 40px;
 }
 
 .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 40px 20px 40px;
+
+  height: 48px;
 }
 
-.left-content {
-  display: flex;
-  gap: 32px;
-}
-
+.left-content,
 .right-content {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 32px;
+}
+
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.mobile-dropdown {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .content {
+    padding: 27px 24px;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+
+  .left-content {
+    gap: 16px;
+  }
 }

@@ -3,10 +3,10 @@
   height: 26px;
   border: none;
   background: transparent;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   &:hover .square {
     animation: expandAnimation 0.3s ease-out forwards;
@@ -48,5 +48,33 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+.menu-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.menu-dropdown {
+  padding: 24px;
+  border: none;
+  box-shadow: 4px 4px 20px 0px #3b3b3b;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  &:is(:focus, :hover, .active) {
+    background-color: map-get($green-light, '100');
+    color: map-get($green-light, '600');
+    border-radius: 8px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
   }
 }
