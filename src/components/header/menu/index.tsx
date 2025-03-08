@@ -33,7 +33,7 @@ export const Menu = () => {
           <MenuIcon />
         </DropdownToggle>
 
-        <DropdownMenu className="menu-dropdown mt-2">
+        <DropdownMenu className="menu-dropdown mt-2" end>
           <DropdownItem className="menu-item">
             <Image src={dossie} alt="dossie-icon" unoptimized />
             <span>Dossiê Jurídico</span>
