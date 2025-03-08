@@ -1,13 +1,13 @@
 import Image from 'next/image';
-import MenuIcon from '../menu/menu-icon';
-import { ModuleIndicator } from '../module-indicator';
-import { MoreOptionsIcon } from '../more-options-icon';
+import { useEffect, useState } from 'react';
+
+import { Menu } from './menu';
+import { Notification } from './notification';
+import { UserDropdown } from './user-dropdown';
+import { ModuleIndicator } from './module-indicator';
+import { MoreOptionsIcon } from './more-options-icon';
 
 import logo from '@/assets/svg/logo-predictus.svg';
-import { UserDropdown } from '../user-dropdown';
-import { Notification } from '../notification';
-import { useEffect, useState } from 'react';
-import { Menu } from '../menu';
 
 export const Header = () => {
   const [isExpandTopbarOpen, setIsExpandTopbarOpen] = useState<boolean>(false);
@@ -27,9 +27,9 @@ export const Header = () => {
   }, []);
 
   return (
-    <header className="container">
-      <div className="content">
-        <div className="left-content">
+    <header className="header-container">
+      <div className="header-content">
+        <div className="header-left-content">
           <Menu />
           <div className="desktop-only">
             <ModuleIndicator />
@@ -38,7 +38,7 @@ export const Header = () => {
 
         <Image src={logo} alt="logo" />
 
-        <div className="right-content">
+        <div className="header-right-content">
           <div className="desktop-only">
             <Notification />
           </div>

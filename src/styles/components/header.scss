@@ -1,11 +1,11 @@
-.container {
+.header-container {
   background: map-get($green, '100');
   max-width: 100%;
   margin: 0 auto;
   padding: 16px 40px 16px 40px;
 }
 
-.content {
+.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,8 +13,8 @@
   height: 48px;
 }
 
-.left-content,
-.right-content {
+.header-left-content,
+.header-right-content {
   display: flex;
   align-items: center;
   gap: 32px;
@@ -38,7 +38,7 @@
 
 /* Mobile */
 @media (max-width: 768px) {
-  .content {
+  .header-content {
     padding: 27px 24px;
   }
 
@@ -50,7 +50,7 @@
     display: flex;
   }
 
-  .left-content {
+  .header-left-content {
     gap: 16px;
   }
 }

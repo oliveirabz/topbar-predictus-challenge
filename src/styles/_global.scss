@@ -1,9 +1,9 @@
 @import 'variables';
-@import './pages/header.scss';
-@import 'pages/menu.scss';
-@import 'pages/module-indicator.scss';
-@import 'pages/user-dropdown.scss';
-@import 'pages/more-options-icon.scss';
+@import './components/header.scss';
+@import 'components/menu.scss';
+@import 'components/module-indicator.scss';
+@import 'components/user-dropdown.scss';
+@import 'components/more-options-icon.scss';
 
 * {
   margin: 0;

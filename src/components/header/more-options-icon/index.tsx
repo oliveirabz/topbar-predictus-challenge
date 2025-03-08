@@ -1,5 +1,6 @@
-import moreIcon from '@/assets/svg/more.svg';
 import Image from 'next/image';
+
+import moreIcon from '@/assets/svg/more.svg';
 
 interface IMoreOptionsIconProps {
   onClick: () => void;
@@ -8,10 +9,11 @@ interface IMoreOptionsIconProps {
 export const MoreOptionsIcon = ({ onClick }: IMoreOptionsIconProps) => {
   return (
     <Image
-      src={moreIcon}
       alt="More"
-      className="more-options-icon"
+      src={moreIcon}
       onClick={onClick}
+      className="more-options-icon"
+      unoptimized
     />
   );
 };

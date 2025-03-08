@@ -1,15 +1,16 @@
 import Image from 'next/image';
-import avatar from '@/assets/avatar.jpeg';
-import chevronDown from '@/assets/svg/chevron-down.svg';
-import logout from '@/assets/svg/logout.svg';
-import user from '@/assets/svg/user.svg';
+import React, { useState } from 'react';
 import {
   Dropdown,
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
 } from 'reactstrap';
-import React, { useState } from 'react';
+
+import user from '@/assets/svg/user.svg';
+import avatar from '@/assets/avatar.jpeg';
+import logout from '@/assets/svg/logout.svg';
+import chevronDown from '@/assets/svg/chevron-down.svg';
 
 export const UserDropdown = () => {
   const [isProfileDropdown, setIsProfileDropdown] = useState<boolean>(false);
@@ -30,18 +31,18 @@ export const UserDropdown = () => {
 
             <div className="profile-user">
               <span>Carla Souza</span>
-              <Image src={chevronDown} alt="chevron-down" />
+              <Image src={chevronDown} alt="chevron-down-icon" unoptimized />
             </div>
           </div>
         </DropdownToggle>
         <DropdownMenu className="user-dropdown-menu">
           <DropdownItem className="user-dropdown-item">
-            <Image src={user} alt="user-icon" />
-            <span className="align-middle">Minha Conta</span>
+            <Image src={user} alt="user-icon" unoptimized />
+            <span>Minha Conta</span>
           </DropdownItem>
           <DropdownItem className="user-dropdown-item">
-            <Image src={logout} alt="logout-icon" />
-            <span className="align-middle">Sair</span>
+            <Image src={logout} alt="logout-icon" unoptimized />
+            <span>Sair</span>
           </DropdownItem>
         </DropdownMenu>
       </Dropdown>
