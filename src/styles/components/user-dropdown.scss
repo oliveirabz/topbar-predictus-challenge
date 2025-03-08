@@ -17,6 +17,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
+
+  span {
+    font-weight: $font-bold;
+    font-size: 14px;
+  }
 }
 
 .user-dropdown-menu {
@@ -29,6 +34,10 @@
   display: flex;
   align-items: center;
   gap: 16px;
+
+  span {
+    font-size: 14px;
+  }
 
   &:is(:focus, :hover, .active) {
     background-color: map-get($green-light, '100');

@@ -51,17 +51,17 @@ export const Menu = () => {
 
           <div className="dropdown-divider"></div>
 
-          <DropdownItem className="menu-item">
+          <DropdownItem className="menu-item divider-item">
             <Image src={dolarCircle} alt="dolar-circle-icon" unoptimized />
             <span>Gestão do Plano</span>
           </DropdownItem>
 
-          <DropdownItem className="menu-item">
+          <DropdownItem className="menu-item divider-item">
             <Image src={users} alt="users-icon" unoptimized />
             <span>Gestão de Acessos</span>
           </DropdownItem>
 
-          <DropdownItem className="menu-item">
+          <DropdownItem className="menu-item divider-item">
             <Image src={clock} alt="clock-icon" unoptimized />
             <span>Histórico de Buscas</span>
           </DropdownItem>

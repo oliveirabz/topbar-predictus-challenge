@@ -66,7 +66,9 @@
 .menu-item {
   display: flex;
   align-items: center;
+
   gap: 16px;
+  font-size: 20px;
 
   &:is(:focus, :hover, .active) {
     background-color: map-get($green-light, '100');
@@ -77,4 +79,8 @@
   &:not(:last-child) {
     margin-bottom: 16px;
   }
+}
+
+.divider-item {
+  font-size: 14px;
 }

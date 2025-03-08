@@ -4,7 +4,7 @@
   gap: 15px;
 
   span {
-    font-weight: bold;
+    font-weight: $font-bold;
     color: map-get($green-light, '400');
   }
 }
