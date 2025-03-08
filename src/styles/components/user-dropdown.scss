@@ -1,3 +1,7 @@
+@use 'sass:map';
+@use '../typography' as fonts;
+@use '../variables' as variables;
+
 .user-dropdown-wrapper {
   display: flex;
   align-items: center;
@@ -13,13 +17,13 @@
 }
 
 .profile-user {
-  color: $white;
+  color: variables.$white;
   display: flex;
   align-items: center;
   gap: 8px;
 
   span {
-    font-weight: $font-bold;
+    font-weight: fonts.$font-bold;
     font-size: 14px;
   }
 }
@@ -40,8 +44,8 @@
   }
 
   &:is(:focus, :hover, .active) {
-    background-color: map-get($green-light, '100');
-    color: map-get($green-light, '600');
+    background-color: map.get(variables.$green-light, '100');
+    color: map.get(variables.$green-light, '600');
     border-radius: 8px;
   }
 

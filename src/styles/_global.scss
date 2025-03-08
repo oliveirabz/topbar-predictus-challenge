@@ -1,10 +1,10 @@
-@import 'variables';
-@import 'typography';
-@import './components/header.scss';
-@import 'components/menu.scss';
-@import 'components/module-indicator.scss';
-@import 'components/user-dropdown.scss';
-@import 'components/more-options-icon.scss';
+@use 'variables' as variables;
+@use 'typography' as fonts;
+@use './components/header.scss';
+@use 'components/menu.scss';
+@use 'components/module-indicator.scss';
+@use 'components/user-dropdown.scss';
+@use 'components/more-options-icon.scss';
 
 * {
   margin: 0;
@@ -13,10 +13,10 @@
 }
 
 body {
-  background-color: $off-white;
+  background-color: variables.$off-white;
   -webkit-font-smoothing: antialiased;
 
-  font-family: $font-primary;
+  font-family: fonts.$font-primary;
   font-weight: 400;
 }
 

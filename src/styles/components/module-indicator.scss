@@ -1,11 +1,15 @@
+@use 'sass:map';
+@use '../typography' as fonts;
+@use '../variables' as variables;
+
 .module-indicator {
   display: flex;
   align-items: center;
   gap: 15px;
 
   span {
-    font-weight: $font-bold;
-    color: map-get($green-light, '400');
+    font-weight: fonts.$font-bold;
+    color: map.get(variables.$green-light, '400');
   }
 }
 

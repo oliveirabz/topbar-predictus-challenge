@@ -1,5 +1,8 @@
+@use 'sass:map';
+@use '../variables' as variables;
+
 .header-container {
-  background: map-get($green, '100');
+  background: map.get(variables.$green, '100');
 
   max-width: 100%;
   margin: 0 auto;
